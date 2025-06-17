@@ -2,7 +2,7 @@
 import subprocess
 
 while True:  # Runs until manually exited
-    print("\nELV Chain Command Menu")
+    print("\nELH Chain Command Menu")
     print("1: Add Transaction")
     print("2: Mine New Block")
     print("3: View Blockchain")
