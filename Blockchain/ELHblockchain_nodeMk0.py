@@ -126,40 +126,4 @@ def filtered_chain():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, use_reloader=False)
-"""
 
-Commands used at terminal
-
-#1
-Interact with the Node:
-You can interact with your node using HTTP requests. Here are some examples:
-    1.1
-    Add a Transaction:
-    Use a tool like curl or Postman to send a POST request to /transactions/new with the transaction data.
-        curl -X POST -H "Content-Type: application/json" -d '{"sender": "Alice", "recipient": "Bob", "amount": 50}' http://localhost:5000/transactions/new
-    1.2
-    Mine a New Block:
-    Send a GET request to /mine to mine a new block and add it to the chain.
-        curl http://localhost:5000/mine
-
-    1.3
-    View the Blockchain:
-    Send a GET request to /chain to view the entire blockchain.
-        curl http://localhost:5000/chain
-#2
-Register and Connect Nodes:
-If you want to create multiple nodes and connect them, you can modify the register_nodes endpoint to include the addresses of the new nodes.
-
-Here’s how you can register nodes:
-    curl -X POST -H "Content-Type: application/json" -d '{"nodes": ["http://localhost:5001"]}' http://localhost:5000/nodes/register
-
-
-
-First test block result at terminal 
-
-
-
-
-
-
-"""
